@@ -1,3 +1,6 @@
+body {
+    background: black;
+}
 * {
     padding: 0;
     margin: 0;
@@ -55,6 +58,7 @@
 .blur-bg{
     background: rgb(0 0 0 / 50%);
     filter: drop-shadow(2px 4px 6px black);
+    padding-bottom: 8%;
 }
 .sub-heading{
     font-family: 'Clash Display';
@@ -81,7 +85,6 @@ header p{
     margin: 0;
 }
 section{
-    background: black;
     padding: 4% 20%;
     color: black;
     display: flex;
@@ -95,12 +98,12 @@ section{
 }
 .label-div{
     background: #EED1A4;
-    padding: 15px 50px;
+    padding: 2% 8%;
     font-weight: 600;
 }
 .input-field-div{
     background: #F8F8F8;
-    padding: 40px 50px 15px;
+    padding: 5% 8% 2%;
 }
 .input-field{
     border: 0;
@@ -136,6 +139,7 @@ section{
     }
     .blur-bg {
         background: none;
+        padding-bottom: 15%;
     }
     #nav-logo {
         height: 45px;
@@ -143,7 +147,11 @@ section{
     .heading{
         font-size: 20px;
         padding: 18% 0 10%;
-        
+    }
+    section{
+        position: relative;
+        top: -80px;
+        z-index: 100;
     }
     .sub-heading{
         font-size: 15px;
@@ -151,5 +159,9 @@ section{
     }
     header p{
         font-size: 10px;
+    }
+    .label-div{
+        font-size: 13px;
+        font-weight: 400;
     }
 }
