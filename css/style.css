@@ -118,7 +118,7 @@ header button{
     text-align: center;
 }
 section{
-    padding: 0 10%;
+    padding: 3% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,10 +166,18 @@ section .bold{
         letter-spacing: 0.785em;
     }
     .d2022{
-        height: 70px;
+        height: 75px;
+    }
+    .day{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
     .dec{
         font-size: 15px;
+        letter-spacing: normal;
+        margin-bottom: 15px;
     }
     .date{
         font-size: 12px;
@@ -191,5 +199,6 @@ section .bold{
         text-align: left;
         line-height: 154.4%;
         font-weight: 500;
+        padding-top: 10%;
     }
 }
