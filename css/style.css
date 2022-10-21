@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.topdiv{
+    
+}
+#navbar{
+    padding: 20px 6%;
+    border-color: transparent !important;
+    background: black;
+}
+.navbar-dark, .navbar-toggler{
+    border-color: transparent !important;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.header-nav-link{
+    color: white !important;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 80px;
+}
+#nav-logo{
+    width: auto;
+    height: 80px;
+}
+header{
+    background: url(../images/katarbg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 8%;
+    padding-top: 1%;
+}
+header img{
+    padding-top: 30px;
+}
+.congress{
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 1.005em;
+    margin-bottom: 0;
+}
+.d2022{
+    width: auto;
+    height: 75px;
+    padding-top:  20px;
+    margin-bottom: 40px;
+}
+.dec{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+}
+.date{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 109.4%;
+    letter-spacing: 1.005em;
+}
+.attend{
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 109.4%;
+    color: #EED1A4;
+}
+.header-btndiv{
+    display: flex;
+}
+header button{
+    margin-top: 30px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 109.4%;
+    margin: 15px;
+}
+.countdown{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Poppins';
+}
+.box{
+    padding: 15px;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #252525;
+    margin:  5px;
+    /* width: 40px; */
+}
+.countdown div{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.countdown p{
+    text-align: center;
+}
+section{
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 154.4%;
+    text-align: center;
+    letter-spacing: 0.015em;
+}
+section .bold{
+    font-weight: 800;
+}
+
+
+@media (max-width: 1080px) {
+    .congress{
+        font-size: 25px;
+        letter-spacing: 0.6em;
+    }
+    .date{
+        font-size: 18px;
+        letter-spacing: 0.6em;
+    }
+    .attend{
+        font-size: 15px;
+    }
+    section{
+        font-size: 15px;
+    }
+}
+@media (max-width: 660px){
+    #nav-logo{
+        height: 45px;
+    }
+    header{
+        padding-bottom: 5em;
+    }
+    .congress{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.785em;
+    }
+    .d2022{
+        height: 70px;
+    }
+    .dec{
+        font-size: 15px;
+    }
+    .date{
+        font-size: 12px;
+        letter-spacing: 0.785em;
+    }
+    .attend{
+        font-size: 13px;
+    }
+    .header-btndiv{
+        display: flex;
+        flex-direction: column;
+    }
+    header button{
+        font-size: 13px ;
+        padding: 12px 20px;
+    }
+    section{
+        font-size: 14px;
+        text-align: left;
+        line-height: 154.4%;
+        font-weight: 500;
+    }
+}
