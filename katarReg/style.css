@@ -135,7 +135,7 @@ section{
 }
 @media (max-width: 600px) {
     .headcontent{
-        background: url(../images/katar-mob-bg2.png);
+        background-image: url(../images/katar-mob-bg-blur.png);
     }
     .blur-bg {
         background: none;
@@ -156,6 +156,8 @@ section{
     .sub-heading{
         font-size: 15px;
         padding: 2px 45px;
+        font-style: normal;
+        font-weight: 400;
     }
     header p{
         font-size: 10px;

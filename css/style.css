@@ -157,7 +157,7 @@ section .bold{
         height: 45px;
     }
     header{
-        padding-bottom: 5em;
+        background-image: url(../images/katarmob-bg.png);
     }
     .congress{
         font-weight: 700;
