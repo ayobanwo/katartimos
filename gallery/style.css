@@ -57,7 +57,9 @@ body{
     width: auto;
     height: 80px;
 }
-
+.navbar-nav {
+    align-items: center;
+}
 section{
     padding: 5% 15%;   
 }
@@ -72,4 +74,9 @@ h3{
 }
 .y-hr{
     border: 1px solid #fff;
+}
+@media (max-width: 987px) {
+    .header-nav-link {
+        margin: 0;
+    }
 }

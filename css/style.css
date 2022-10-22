@@ -184,7 +184,7 @@ header img{
     text-align: center;
 }
 section{
-    padding: 3% 10%;
+    padding: 6% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,6 +216,11 @@ section .bold{
     }
     section{
         font-size: 15px;
+    }
+}
+@media (max-width: 987px) {
+    .header-nav-link {
+        margin: 0;
     }
 }
 @media (max-width: 660px){

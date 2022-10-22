@@ -20,7 +20,9 @@ body {
     border-color: transparent !important; 
     background: #000;
 }
-
+.navbar-nav {
+    align-items: center;
+}
 .navbar-dark,
 .navbar-toggler {
     border-color: transparent !important;
@@ -146,12 +148,15 @@ section{
     letter-spacing: 0.015em;
     padding: 3px 15px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 987px) {
     .heading{
         font-size: 40px;
     }
     section{
         padding: 4% 10%;
+    }
+    .header-nav-link{
+        margin: 0;
     }
 }
 @media (max-width: 600px) {
