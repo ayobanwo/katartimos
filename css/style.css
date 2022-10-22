@@ -24,12 +24,38 @@
     font-size: 16px;
     margin-right: 80px;
 }
+.link-hover-effect-1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5rem 0;
+}
+
+.link-hover-effect-1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateX(-105%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.link-hover-effect-1:hover::before {
+    transform: translateX(0);
+}
 #nav-logo{
     width: auto;
     height: 80px;
 }
+.navbar-nav{
+    align-items: center;
+}
 header{
     background: url(../images/katarbg.svg);
+    filter: drop-shadow(2px 4px 6px black);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,10 +104,12 @@ header img{
 .header-btndiv{
     display: flex;
 }
-header button{
+.header-btn{
+    display: inline-block;
     margin-top: 30px;
     background: transparent;
     color: #fff;
+    transition: all 0.3s;
     border: 2px solid #FFFFFF;
     border-radius: 15px;
     padding: 15px 25px;
@@ -90,6 +118,44 @@ header button{
     font-size: 20px;
     line-height: 109.4%;
     margin: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    outline: none;
+}
+
+.header-btn:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -2;
+}
+
+.header-btn:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fff !important;
+    transition: all 0.3s;
+    z-index: -1;
+    color: black;
+}
+
+.header-btn:hover {
+    color: #000 !important;
+    text-decoration: none;
+    border-color: #fff !important;
+}
+
+.header-btn:hover:before {
+    width: 100%;
 }
 .countdown{
     display: grid;
@@ -166,7 +232,7 @@ section .bold{
         letter-spacing: 0.785em;
     }
     .d2022{
-        height: 75px;
+        height: 73px;
     }
     .day{
         text-align: center;
@@ -190,13 +256,13 @@ section .bold{
         display: flex;
         flex-direction: column;
     }
-    header button{
+    .header-btn{
         font-size: 13px ;
         padding: 12px 20px;
     }
     section{
         font-size: 14px;
-        text-align: left;
+        text-align: justify;
         line-height: 154.4%;
         font-weight: 500;
         padding-top: 10%;

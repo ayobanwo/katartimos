@@ -38,7 +38,28 @@ body {
     font-size: 16px;
     margin-right: 80px;
 }
+.link-hover-effect-1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5rem 0;
+}
 
+.link-hover-effect-1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateX(-105%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.link-hover-effect-1:hover::before {
+    transform: translateX(0);
+}
 #nav-logo {
     width: auto;
     height: 80px;
