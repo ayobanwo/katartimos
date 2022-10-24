@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let body = document.body;
 
 body.querySelector('#flipdown').classList.add('flipdown__theme-light');
-
+body.querySelector('.creditTag').style.display = 'none'
   var ver = document.getElementById('ver');
   ver.innerHTML = flipdown.version;
 });
