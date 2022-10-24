@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
 }
-.topdiv{
-    
+.creditTag{
+    display: none;
 }
 #navbar{
     padding: 20px 6%;
@@ -157,9 +157,11 @@ header img{
 .header-btn:hover:before {
     width: 100%;
 }
+.reg{
+    font-family: 'Poppins';
+}
 .countdown{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: flex; */
     font-family: 'Poppins';
 }
 .box{
@@ -173,15 +175,6 @@ header img{
     color: #252525;
     margin:  5px;
     /* width: 40px; */
-}
-.countdown div{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.countdown p{
-    text-align: center;
 }
 section{
     padding: 6% 10%;
