@@ -1,10 +1,10 @@
 body {
     background: black;
+    font-family: 'Clash Display';
 }
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Clash Display';
 }
 
 .headcontent{
@@ -96,7 +96,7 @@ body {
 }
 header p{
     background: #d9d9d91a;
-    font-family: 'Clash Display';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -104,7 +104,7 @@ header p{
     text-align: center;
     letter-spacing: 0.015em;
     color: #FFFFFF;
-    padding: 3%;
+    padding: 3% 20%;
     margin: 0;
 }
 .section{
@@ -122,11 +122,11 @@ header p{
 .label-div{
     background: #EED1A4;
     padding: 2% 8%;
-    font-weight: 600;
+    font-weight: 500;
 }
 .input-field-div{
     background: #F8F8F8;
-    padding: 5% 8% 2%;
+    padding:5% 8%;
 }
 .input-field{
     border: 0;
@@ -151,15 +151,25 @@ header p{
 .formTitle{
     background: #d9d9d91a;
     text-align: center;
+    font-family: 'Montserrat', sans-serif ;
     color: #FFFFFF;
     padding: 2% 6%;
-    margin-bottom: 1%;
+    margin-top: 4%;
+}
+.submitBtn{
+    padding: 1% 3%;
+    background: #611833;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 @media (max-width: 987px) {
     .heading{
         font-size: 40px;
     }
-    section{
+    .section{
         padding: 4% 10%;
     }
     .header-nav-link{
@@ -181,7 +191,10 @@ header p{
         font-size: 20px;
         padding: 18% 0 10%;
     }
-    section{
+    .section{
+        font-size: 13px;
+    }
+    .section1{
         position: relative;
         top: -80px;
         z-index: 100;
@@ -198,5 +211,11 @@ header p{
     .label-div{
         font-size: 13px;
         font-weight: 400;
+    }
+    .formTitle h2{
+        font-size: 18px;
+    }
+    .formTitle p{
+        font-size: 12px;
     }
 }
