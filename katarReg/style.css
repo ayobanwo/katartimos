@@ -80,7 +80,6 @@ body {
 }
 .blur-bg{
     background: rgb(0 0 0 / 50%);
-    filter: drop-shadow(2px 4px 6px black);
     padding-bottom: 8%;
 }
 .sub-heading{

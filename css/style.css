@@ -175,7 +175,7 @@ header img{
     margin:  5px;
     /* width: 40px; */
 }
-section{
+.section{
     padding: 6% 10%;
     display: flex;
     flex-direction: column;
@@ -189,8 +189,17 @@ section{
     text-align: center;
     letter-spacing: 0.015em;
 }
-section .bold{
+.section .bold{
     font-weight: 800;
+}
+.img-div{
+    display: none;
+}
+.img-div img{
+    width: 100%;
+}
+.carousel{
+    padding: 6% 10%;
 }
 
 
@@ -206,7 +215,7 @@ section .bold{
     .attend{
         font-size: 15px;
     }
-    section{
+    .section{
         font-size: 15px;
     }
 }
@@ -257,11 +266,17 @@ section .bold{
         font-size: 13px ;
         padding: 12px 20px;
     }
-    section{
+    .section{
         font-size: 15px;
         text-align: justify;
-        line-height: 154.4%;
         font-weight: 500;
         padding-top: 10%;
+        line-height: 26px;
+    }
+    .carousel{
+        display: none;
+    }
+    .img-div{
+        display: block;
     }
 }
