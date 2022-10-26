@@ -86,7 +86,6 @@ header h1{
     height: 250px;
 }
 .blurBg {
-    background: #d9d9d91a;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
@@ -222,8 +221,11 @@ form{
         height: 100px;
     }
     label,
-    .input-field, .blurBg, .check {
+    .blurBg, .check {
         font-size: 15px;
+    }
+    .input-field{
+        font-size: 10px;
     }
     .submitBtn{
         font-size: 15px;

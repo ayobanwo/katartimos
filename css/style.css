@@ -55,7 +55,6 @@
 }
 header{
     background: url(../images/katarbg.svg);
-    filter: drop-shadow(2px 4px 6px black);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,7 +258,7 @@ section .bold{
         padding: 12px 20px;
     }
     section{
-        font-size: 14px;
+        font-size: 15px;
         text-align: justify;
         line-height: 154.4%;
         font-weight: 500;
