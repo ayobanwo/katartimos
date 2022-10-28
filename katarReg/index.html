@@ -82,7 +82,7 @@
                     <label>E-mail</label>
                 </div>
                 <div class="input-field-div">
-                    <input required id="r=email" class="input-field" type="text">
+                    <input required id="email" class="input-field" type="text">
                     <span class="required">Required</span>
                 </div>
             </div>
@@ -107,16 +107,7 @@
                     </select>
                     <span class="required">Required</span>
                 </div>
-            </div>
-            <div class="input-box">
-                <div class="label-div">
-                    <label>Date of Birth (Fill Correctly) [Tap on "2022" at the top left to easily pick your year of birth]</label>
-                </div>
-                <div class="input-field-div">
-                    <input id="dob" class="input-field" type="date" required>
-                    <span class="required">Required</span>
-                </div>
-            </div>
+            </div> 
             <div class="input-box">
                 <div class="label-div">
                     <label>Age Group</label>
@@ -124,10 +115,12 @@
                 <div class="input-field-div">
                     <select name="ageGroup" id="ageGroup" class="input-field" required>
                         <option value="select" selected disabled>Select</option>
-                        <option value="male">15 - 19</option>
-                        <option value="female">20 - 35</option>
-                        <option value="female">36 - 60</option>
-                        <option value="female">Above 60</option>
+                        <option value="ageB8">Below 8</option>
+                        <option value="ageA8"> 8 - 13</option>
+                        <option value="ageA14">14 - 18</option>
+                        <option value="ageA19">19 - 35</option>
+                        <option value="ageA36">36 - 60</option>
+                        <option value="ageA60">Above 60</option>
                     </select>
                     <span class="required">Required</span>
                 </div>
@@ -143,26 +136,25 @@
             </div>
     
             <div class="input-box">
-                <div class="label-div">
+             <div class="label-div">
                     <label>Are you a CROSSWALK CHURCH Worker/Member?</label>
                 </div>
                 <div class="input-field-div">
-                    <select name="ageGroup" id="ageGroup" class="input-field" required>
-                        <option value="select" selected disabled>Select</option>
-                        <option value="male">I am not a CrossWalk Church Member</option>
-                        <option value="ago">Ago-Iwoye</option>
-                        <option value="alabata">Alabata</option>
-                        <option value="ibadan">Ibadan</option>
-                        <option value="ikorodu">Ikorudu</option>
-                        <option value="ilaro">Ilaro</option>
-                        <option value="iyanapaja">Iyana-Ipaja</option>
-                        <option value="magboro">Magboro</option>
-                        <option value="osiele">Osiele</option>
-                        <option value="sagamu">Sagamu</option>
-                    </select>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="membYes" name="isMember" value="membYes">
+                        <label class="form-check-label" for="membYes">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="membNo" name="isMember" value="membNo">
+                        <label class="form-check-label" for="membNo">No</label>
+                    </div>
+                    
                     <span class="required">Required</span>
                 </div>
             </div>
+        </div>
+        
+        <!-- <div class="section nonMemb">
             
             <div class="input-box">
                 <div class="label-div">
@@ -213,7 +205,8 @@
                     </div>
                     <span class="required">Required</span>
                 </div>
-             </div>   
+            </div>   
+
             <div class="input-box">
                 <div class="label-div">
                     <label>What State will you be travelling from in Nigeria?</label>
@@ -223,112 +216,6 @@
                     <span class="required">Required</span>
                 </div>
             </div>
-    
-        </div>
-        <div class="formTitle">
-            <h2>LODGING DETAILS AND PREFERENCE</h2>
-            <p>Note that KATARTISMOS CONGRESS is strictly a camping programme. More specific details and arrangements will be made
-            available later. <br> <span class="bold">THIS SECTION DOES NOT APPLY TO CROSSWALK CHURCH WORKERS</spa> </p>
-        </div>
-        <div class="formTitle">
-            <h2>For The Married</h2> 
-            <p>Fill only if you are married NOT FOR CROSSWALK CHURCH MEMBERS</p>
-        </div>
-    
-        <div class="section">
-            <div class="input-box">
-                <div class="label-div">
-                    <label>Will you be attending the Conference with your spouse?</label>
-                </div>
-                <div class="input-field-div">
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="spouseYes" name="spouseAttend" value="yes" >
-                        <label class="form-check-label" for="spouseYes">Yes</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="spouseNo" name="spouseAttend" value="no">
-                        <label class="form-check-label" for="spouseNo">No</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="spouseNotYet" name="spouseAttend" value="notYet">
-                        <label class="form-check-label" for="spouseNotYet">Not confirmed yet, but I intend to come with them</label>
-                    </div>
-                </div>
-            </div>
-            <div class="input-box">
-                <div class="label-div">
-                    <label>Will you be attending the Conference with any babies or children?</label>
-                </div>
-                <div class="input-field-div">
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="childYesM" name="childAttendM" value="childYesM">
-                        <label class="form-check-label" for="childYesM">Yes</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="childNoM" name="childAttendM" value="childNoM">
-                        <label class="form-check-label" for="childNoM">No</label>
-                    </div>
-                </div>
-    
-            </div>
-    
-        </div>
-    
-        <div class="formTitle">
-            <h2>For The Unmarried</h2>
-            <p>NOT FOR CROSSWALK CHURCH MEMBERS Fill the following if you are unmarried</p>
-        </div>
-    
-        <div class="section">
-            <div class="input-box">
-                <div class="label-div">
-                    <label>Will you be attending the Conference with any babies or children?</label>
-                </div>
-                <div class="input-field-div">
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="childYesU" name="childAttendU" value="childYesU">
-                        <label class="form-check-label" for="childYesU">Yes</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="radio" class="form-check-input" id="childNoU" name="childAttendU" value="childNoU">
-                        <label class="form-check-label" for="childNoU">No</label>
-                    </div>
-                </div>
-            
-            </div>
-            <div class="input-box">
-    
-                <div class="label-div">
-                    <label>Have you attended any previous edition of KATARTISMOS CONGRESS? (You can tick more than one option)</label>
-                </div>  
-    
-                <div class="input-field-div">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="lodge4" name="lodge4" value="lodge4">
-                        <label class="form-check-label" for="lodge4">Special lodging for 4-6 (Group of friends)</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="lodge2" name="lodge2" value="lodge2">
-                        <label class="form-check-label" for="lodge2">Special lodging for 2 or 3</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="lodge1" name="lodge1" value="lodge1">
-                        <label class="form-check-label" for="lodge1">Special lodging for 1</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="genLodge" name="genLodge" value="genLodge">
-                        <label class="form-check-label" for="genLodge">General lodging</label>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    
-        <div class="formTitle">
-            <h2>GENERAL PREPARATION</h2>
-        </div>
-    
-        <div class="section">
             <div class="input-box">
                 <div class="label-div">
                     <label>How did you get to know about the Conference? (Indicate the name if it was an individual)</label>
@@ -338,6 +225,7 @@
                     <span class="required">Required</span>
                 </div>
             </div>
+    
             <div class="input-box">
                 <div class="label-div">
                     <label>Have you made full arrangements to attend the Conference?</label>
@@ -352,6 +240,7 @@
                     <span class="required">Required</span>
                 </div>
             </div>
+
             <div class="input-box">
                 <div class="label-div">
                     <label>What are your expectations for this Congress? Feel free to add a need for healing or miracle of any sort.</label>
@@ -361,6 +250,12 @@
                     <span class="required">Required</span>
                 </div>
             </div>
+
+        </div> -->
+        
+    
+
+        <!-- <div class="section">
             <div class="input-box">
                 <div class="label-div">
                     <label>Would you love an opportunity to give financially or in any other capacity towards KATARTISMOS CONGRESS 2021?</label>
@@ -380,14 +275,15 @@
                 </div>
             </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="section">
-            <button class="submitBtn" type="submit">SUBMIT</button>
+            <button class="submitBtn" type="submit">NEXT</button>
 
         </div>
     </form>
     
+    <script src="script.js"></script>
     <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>

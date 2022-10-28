@@ -114,6 +114,9 @@ header p{
     justify-content: center;
     align-items: center;
 }
+.nonMemb{
+    display: none;
+}
 .input-box{
     width: 100%;
     margin: 50px;
@@ -155,7 +158,7 @@ header p{
     padding: 2% 6%;
     margin-top: 4%;
 }
-.submitBtn{
+.submitBtn, .nextBtn{
     padding: 1% 3%;
     background: #611833;
     font-family: 'Montserrat', sans-serif;
