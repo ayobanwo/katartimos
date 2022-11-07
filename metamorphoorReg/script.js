@@ -2,6 +2,7 @@ let submitBtn = document.querySelector('.submitBtn');
 let form = document.querySelector('form');
 
 submitBtn.addEventListener('click', e=>{
+    // e.preventDefault();
     let leader_name = document.querySelector('#leader_name');
     let leader_mobile_number = document.querySelector('#leader_mobile_number');
     let pastor_name = document.querySelector('#pastor_name');
@@ -56,8 +57,8 @@ submitBtn.addEventListener('click', e=>{
         }
     })
 
-    dataObj = {leader_name, leader_church, first_name, other_name, leader_mobile_number, last_name, mobile_number, gender, age_group, class_group, resident, town, state, dob, school, parent, }
-    dataObj = {leader_name, leader_church, first_name, other_name, leader_mobile_number, last_name, mobile_number, gender, age_group, class_group, resident, town, state, dob, school, parent, relationship, parent_mobile, approval, parent_condition}
+
+    dataObj = {leader_name, leader_church, pastor_name, first_name, other_name, leader_mobile_number, last_name, mobile_number, gender, age_group, class_group, resident, town, state, dob, school, parent, relationship, parent_mobile, approval, parent_condition}
 
     fetch("https://whitefieldmissions.org/backends/api/post/reg_child.php", {
             method: 'post',

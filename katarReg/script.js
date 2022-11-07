@@ -57,7 +57,7 @@ nextBtn.addEventListener('click', e=>{
     
     dataObj = {first_name, last_name, email, mobile_number, gender, age_group, resident, state, town, member, knowledge, made_arrangement, expectation, attended_before }
 
-console.log(dataObj);
+// console.log(dataObj);
 
     fetch("https://whitefieldmissions.org/backends/api/post/reg_adult.php", {
             method: 'post',

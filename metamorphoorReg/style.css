@@ -1,19 +1,15 @@
 body {
-    background: black;
     font-family: 'Clash Display';
+    background: url(../images/katarbg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 * {
     padding: 0;
     margin: 0;
-}
-
-.headcontent {
-    background: url(../images/katarbg.svg);
-    /* backdrop-filter: blur(500px); */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #navbar {
@@ -119,6 +115,7 @@ header p {
 
 .section {
     padding: 4% 20%;
+    background: rgb(0 0 0 / 50%);
     color: black;
     display: flex;
     flex-direction: column;
@@ -203,7 +200,7 @@ header p {
 }
 
 @media (max-width: 600px) {
-    .headcontent {
+    body {
         background-image: url(../images/katar-mob-bg-blur.png);
     }
 
@@ -223,17 +220,13 @@ header p {
 
     .section {
         font-size: 13px;
+        background: none;
     }
-
-    .section1 {
-        position: relative;
-        top: -80px;
-        z-index: 100;
+    .sub-heading{
+        padding: 15px 30px;
     }
-
-    .sub-heading {
+    .sub-heading h3{
         font-size: 15px;
-        padding: 2px 45px;
         font-style: normal;
         font-weight: 400;
     }
