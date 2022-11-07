@@ -43,54 +43,61 @@
         <div class="resImgDiv">
             <img class="resImg img-fluid" src="../images/reservation.svg" alt="">
         </div>
-        <div class="blurBg">
-            Kindly fill in your details.
-            If you only want to check the Available
-            Accommodation Options, go to
-            Accommodation List.
-        </div>
+        <p>
+            Choose Your Preferred Accommodation Type
+        </p>
     </header>
-    <form action="">
+    
+    <section>
         <div class="input-field-div">
-            <label for="fname">First Name*</label><br>
-            <input type="text" class="input-field" id="fname" placeholder="As used in Registration">
-        </div>
-        <div class="input-field-div">
-            <label for="fname">Last Name*</label><br>
-            <input type="text" class="input-field" id="fname" placeholder="As used in Registration">
-        </div>
-        <div class="input-field-div">
-            <label for="phoneNum">Phone*</label><br>
-            <input type="text" class="input-field" id="phoneNum" placeholder="Enter your phone number">
-        </div>
-        <div class="input-field-div">
-            <label for="email">E-mail*</label><br>
-            <input class="input-field" type="text" id="email" placeholder="Enter your E-mail">
-        </div>
-        <div class="input-field-div">
-            <label for="gender">Gender*</label><br>
-            <select name="gender" id="gender" class="input-field" required>
-                <option value="select" selected disabled>Select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-
-        </div>
-        <div class="input-field-div">
-            <label for="fname">Name of Local Church*</label><br>
-            <input type="text" class="input-field" id="fname" placeholder="Enter your phone number">
+            <p>Select Gender</p>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="male" name="isMember" value="male">
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="female" name="isMember" value="female">
+                <label class="form-check-label" for="female">Female</label>
+            </div>        
         </div>
 
-        <label class="check">
-            <input type="checkbox" >
-            <span class="checkmark"></span>
-            I have registered for the Congress
-        </label>
+        <div class="accomodDiv">
+            <h2 id="hostelType"></h2>
+            <div class="accomod">
+                <h3>DORMITORY</h3>
+                <p class="price">₦3,500 per person</p>
+                <p class="desc">Bunks. Toilets and Bathroom per Dorm</p>
+                <a href=""  id="dorm1"> <button class="proceedBtn"> Proceed</button></a>
+            </div>
+            <div class="accomod">
+                <h3>DORMITORY WITH AC</h3>
+                <p class="price">₦5,000 per person</p>
+                <p class="desc">Air Conditioning, Bunks, Toilets and Bathroom per Dorm</p>
+                <a href="" id="dormAc"> <button class="proceedBtn"> Proceed</button></a>
+            </div>
+            <div class="accomod">
+                <h3>HOSTEL with AC</h3>
+                <p class="price">₦9,000 per person</p>
+                <p class="desc">Bunks. Toilets and Bathroom per Dorm</p>
+                <a href="" id="hostelAc"> <button class="proceedBtn"> Proceed</button></a>
+            </div>
+            <div class="accomod">
+                <h3>SELF-CONTAIN ROOM</h3>
+                <p class="price">₦18,000 per person</p>
+                <p class="desc">No Air Conditioning. Maximum of 2 persons per room</p>
+                <a href="" id="selfcon"> <button class="proceedBtn"> Proceed</button></a>
+            </div>
+            <div class="accomod">
+                <h3>SELF-CONTAIN EXECUTIVE with AC</h3>
+                <p class="price">₦30,000 per person</p>
+                <p class="desc">Air Conditioning. Wardrobe. Toilet and Bathroom
+                Maximum of 2 persons per room</p>
+                <a href="" id="selfconEx"> <button class="proceedBtn"> Proceed</button></a>
+            </div>
+        </div>
+    </section>
 
-        <button class="submitBtn" type="submit">SUBMIT</button>
-
-    </form>
-
+    <script src="script.js"></script>
     <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
