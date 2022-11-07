@@ -1,5 +1,4 @@
 let nextBtn = document.querySelector('.nextBtn');
-let nextBtn = document.querySelector('.nextBtn');
 let form = document.querySelector('form');
 let membNo = document.querySelector('#membNo');
 let membYes = document.querySelector('#membYes');
