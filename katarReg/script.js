@@ -1,5 +1,5 @@
 let nextBtn = document.querySelector('.nextBtn');
-let test = document.querySelector('.test');
+let nextBtn = document.querySelector('.nextBtn');
 let form = document.querySelector('form');
 let membNo = document.querySelector('#membNo');
 let membYes = document.querySelector('#membYes');
@@ -21,7 +21,7 @@ membYes.addEventListener('click', e=>{
 })
 
 
-test.addEventListener('click', e=>{
+nextBtn.addEventListener('click', e=>{
     e.preventDefault();
     let first_name = document.querySelector('#first_name').value;
     let last_name = document.querySelector('#last_name').value;

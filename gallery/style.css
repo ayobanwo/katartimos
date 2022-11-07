@@ -80,3 +80,8 @@ h3{
         margin: 0;
     }
 }
+@media (max-width: 660px) {
+    #nav-logo {
+    height: 45px;
+}
+}
