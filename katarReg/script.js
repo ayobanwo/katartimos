@@ -21,7 +21,7 @@ membYes.addEventListener('click', e=>{
 
 
 nextBtn.addEventListener('click', e=>{
-    e.preventDefault();
+    // e.preventDefault();
     let first_name = document.querySelector('#first_name').value;
     let last_name = document.querySelector('#last_name').value;
     let email = document.querySelector('#email').value;
