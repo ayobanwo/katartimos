@@ -87,15 +87,20 @@ body {
     color: white;
 }
 .heading{
-    font-family: 'Clash Display';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: 35px;
+    font-weight: 400;
+    font-size: 28px;
     line-height: 154.4%;
     text-align: center;
     letter-spacing: 0.015em;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.heading .bold{
+    font-size: 38px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
 }
 .blur-bg{
     padding-bottom: 8%;
@@ -145,7 +150,7 @@ body {
 }
 .label-div{
     background: #EED1A4;
-    padding: 2% 8%;
+    padding: 4% 8%;
     font-weight: 500;
 }
 .input-field-div{
@@ -191,6 +196,9 @@ body {
 }
 .btn-section{
     margin-top: -80px;
+}
+.form-check{
+    padding-bottom: 11px;
 }
 @media (max-width: 1080px) {
     .congress {
@@ -242,7 +250,8 @@ body {
         background: none;
     }
     .section{
-        font-size: 13px;
+        font-size: 15px;
+        font-weight: 400;
         background: none;
     }
     .section1{
@@ -260,8 +269,11 @@ body {
         font-size: 10px;
     }
     .label-div{
-        font-size: 13px;
-        font-weight: 400;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    select {
+        padding: 12px 0;
     }
     .formTitle h2{
         font-size: 18px;

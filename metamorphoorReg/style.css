@@ -134,10 +134,12 @@ header p {
 
 .label-div {
     background: #EED1A4;
-    padding: 2% 8%;
+    padding: 4% 8%;
     font-weight: 500;
 }
-
+label{
+    margin-bottom: 0;
+}
 .input-field-div {
     background: #F8F8F8;
     padding: 5% 8%;
@@ -150,6 +152,9 @@ header p {
     width: 100%;
     background: transparent;
     margin-bottom: 15px;
+}
+select{
+    padding: 12px 0;
 }
 
 .required {
@@ -183,6 +188,9 @@ header p {
     border: none;
     border-radius: 5px;
     font-weight: bold;
+}
+.form-check {
+    padding-bottom: 11px;
 }
 
 @media (max-width: 987px) {
@@ -219,7 +227,8 @@ header p {
     }
 
     .section {
-        font-size: 13px;
+        font-size: 15px;
+        font-weight: 400;
         background: none;
     }
     .sub-heading{
@@ -228,16 +237,18 @@ header p {
     .sub-heading h3{
         font-size: 15px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
     }
 
     header p {
         font-size: 10px;
     }
-
+    .input-field-div{
+        padding: 10% 8%;
+    }
     .label-div {
-        font-size: 13px;
-        font-weight: 400;
+        font-size: 17px;
+        font-weight: 500;
     }
 
     .formTitle h2 {
