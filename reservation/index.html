@@ -29,11 +29,11 @@
                 </li>
 
                 <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1" target="_blank"
-                        href="../about/">
+                        href="https://whitefieldmissions.org/katartismos/">
                         About</a></li>
-                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1 blink"
+                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1"
                         href="../gallery/">Gallery</a></li>
-                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1 blink"
+                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1"
                         href="index.html">MakeYourReservation</a></li>
             </ul>
         </div>
@@ -49,53 +49,67 @@
     </header>
     
     <section>
-        <div class="input-field-div">
-            <p>Select Gender</p>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" id="male" name="isMember" value="male">
-                <label class="form-check-label" for="male">Male</label>
-            </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" id="female" name="isMember" value="female">
-                <label class="form-check-label" for="female">Female</label>
-            </div>        
+        <p>Select Gender</p>
+        <div class="genderDiv">
+            <span class="genderBtn" id="male">Male</span> 
+            <span class="genderBtn" id="female">Female</span>
         </div>
 
-        <div class="accomodDiv">
-            <h2 id="hostelType"></h2>
+    </section>
+    <div class="accomodDiv">
+        <h2 id="hostelType"></h2>
+        <div class="acdiv">
+
             <div class="accomod">
                 <h3>DORMITORY</h3>
                 <p class="price">₦3,500 per person</p>
                 <p class="desc">Bunks. Toilets and Bathroom per Dorm</p>
-                <a href=""  id="dorm1"> <button class="proceedBtn"> Proceed</button></a>
+
+                <div class="btnDiv">
+                    <a href=""  id="dorm1" class="proceedBtn"> Proceed</a>
+                </div>
             </div>
             <div class="accomod">
                 <h3>DORMITORY WITH AC</h3>
                 <p class="price">₦5,000 per person</p>
                 <p class="desc">Air Conditioning, Bunks, Toilets and Bathroom per Dorm</p>
-                <a href="" id="dormAc"> <button class="proceedBtn"> Proceed</button></a>
+                <div class="btnDiv">
+                    <a href="" id="dormAc" class="proceedBtn"> Proceed</a>
+                </div>
             </div>
             <div class="accomod">
                 <h3>HOSTEL with AC</h3>
                 <p class="price">₦9,000 per person</p>
                 <p class="desc">Bunks. Toilets and Bathroom per Dorm</p>
-                <a href="" id="hostelAc"> <button class="proceedBtn"> Proceed</button></a>
+                <div class="btnDiv">
+                    <a href="" id="hostelAc" class="proceedBtn">Proceed</a>
+                </div>
             </div>
             <div class="accomod">
                 <h3>SELF-CONTAIN ROOM</h3>
                 <p class="price">₦18,000 per person</p>
                 <p class="desc">No Air Conditioning. Maximum of 2 persons per room</p>
-                <a href="" id="selfcon"> <button class="proceedBtn"> Proceed</button></a>
+                <div class="btnDiv">
+                    <a href="" id="selfcon" class="proceedBtn"> Proceed </a>
+                </div>
             </div>
             <div class="accomod">
                 <h3>SELF-CONTAIN EXECUTIVE with AC</h3>
                 <p class="price">₦30,000 per person</p>
                 <p class="desc">Air Conditioning. Wardrobe. Toilet and Bathroom
                 Maximum of 2 persons per room</p>
-                <a href="" id="selfconEx"> <button class="proceedBtn"> Proceed</button></a>
+                <div class="btnDiv">
+                    <a href="" id="selfconEx" class="proceedBtn"> Proceed</a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="prekart">
+        <a href="https://bit.ly/prekatartismos2022">
+            <p class="blink"> Click here to register for Pre - Kartatismos Retreat Now</p>
+    
+        </a>
+    </div>
 
     <script src="script.js"></script>
     <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>

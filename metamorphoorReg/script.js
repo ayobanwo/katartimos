@@ -3,22 +3,23 @@ let form = document.querySelector('form');
 
 submitBtn.addEventListener('click', e=>{
     // e.preventDefault();
-    let leader_name = document.querySelector('#leader_name');
-    let leader_mobile_number = document.querySelector('#leader_mobile_number');
-    let pastor_name = document.querySelector('#pastor_name');
-    let first_name = document.querySelector('#first_name');
-    let other_name = document.querySelector('#other_name');
-    let last_name = document.querySelector('#last_name');
-    let gender = document.querySelector('#gender');
-    let dob = document.querySelector('#dob');
-    let age_group = document.querySelector('#age_group');
-    let school = document.querySelector('#school');
-    let parent = document.querySelector('#parent');
-    let parent_mobile = document.querySelector('#parent_mobile');
-    let resident = document.querySelector('#resident');
-    let town = document.querySelector('#town');
-    let state = document.querySelector('#state');
-    let parent_condition = document.querySelector('#parent_condition');
+    let leader_name = document.querySelector('#leader_name').value;
+    let leader_mobile_number = document.querySelector('#leader_mobile_number').value;
+    let pastor_name = document.querySelector('#pastor_name').value;
+    let first_name = document.querySelector('#first_name').value;
+    let other_name = document.querySelector('#other_name').value;
+    let last_name = document.querySelector('#last_name').value;
+    let gender = document.querySelector('#gender').value;
+    let dob = document.querySelector('#dob').value;
+    let age_group = document.querySelector('#age_group').value;
+    let school = document.querySelector('#school').value;
+    let mobile_number = document.querySelector('#mobile_number').value;
+    let parent = document.querySelector('#parent').value;
+    let parent_mobile = document.querySelector('#parent_mobile').value;
+    let resident = document.querySelector('#resident').value;
+    let town = document.querySelector('#town').value;
+    let state = document.querySelector('#state').value;
+    let parent_condition = document.querySelector('#parent_condition').value;
 
     //Leader Church
     let leader_churchArr =  document.getElementsByName('leader_church'); 
@@ -59,6 +60,8 @@ submitBtn.addEventListener('click', e=>{
 
 
     dataObj = {leader_name, leader_church, pastor_name, first_name, other_name, leader_mobile_number, last_name, mobile_number, gender, age_group, class_group, resident, town, state, dob, school, parent, relationship, parent_mobile, approval, parent_condition}
+
+    console.log(dataObj);
 
     fetch("https://whitefieldmissions.org/backends/api/post/reg_child.php", {
             method: 'post',

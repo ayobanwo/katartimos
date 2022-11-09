@@ -147,7 +147,7 @@
                 
             <div class="input-box">
                 <div class="label-div">
-                    <label for="first_name">Firstname </label>
+                    <label for="first_name">First Name </label>
                 </div>
                 <div class="input-field-div">
                     <input required id="first_name" class="input-field" type="text">
@@ -165,7 +165,7 @@
             </div>
             <div class="input-box">
                 <div class="label-div">
-                    <label for="last_name"> Lastname </label>
+                    <label for="last_name"> Last Name </label>
                 </div>
                 <div class="input-field-div">
                     <input required id="last_name" class="input-field" type="text">
@@ -202,10 +202,10 @@
                 <div class="input-field-div">
                     <select name="age_group" id="age_group" class="input-field" required>
                         <option value="select" selected disabled>Select</option>
-                        <option value="ageB5">Below 5</option>
-                        <option value="ageA6"> 6 - 10</option>
-                        <option value="ageA11">11 - 15</option>
-                        <option value="ageA16">Above 16</option>
+                        <option value="below 5">Below 5</option>
+                        <option value="6-10"> 6 - 10</option>
+                        <option value="11-15">11 - 15</option>
+                        <option value="above 16">Above 16</option>
                     </select>
                     <span class="required">Required</span>
                 </div>
@@ -226,23 +226,23 @@
                 </div>
                 <div class="input-field-div">
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="cgBp2" name="class_group" value="cgBp2" required>
+                        <input type="radio" class="form-check-input" id="cgBp2" name="class_group" value="below pry2" required>
                         <label class="form-check-label" for="cgBp2">Below Primary 2</label>
                     </div>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="cgAp2" name="class_group" value="cgAp2">
+                        <input type="radio" class="form-check-input" id="cgAp2" name="class_group" value="pry2 - pry4">
                         <label class="form-check-label" for="cgAp2">Primary 2 - Primary 4</label>
                     </div>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="cgAp5" name="class_group" value="cgAp5">
+                        <input type="radio" class="form-check-input" id="cgAp5" name="class_group" value="pry5 - js2">
                         <label class="form-check-label" for="cgAp5">Primary 5 - JSS2</label>
                     </div>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="cgAj3" name="class_group" value="cgAj3">
+                        <input type="radio" class="form-check-input" id="cgAj3" name="class_group" value="js3 - ss2">
                         <label class="form-check-label" for="cgAj3">JSS3 - SSS2</label>
                     </div>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="cgAs3" name="class_group" value="cgAs3">
+                        <input type="radio" class="form-check-input" id="cgAs3" name="class_group" value="ss3 and sch leaver">
                         <label class="form-check-label" for="cgAs3">SSS3  and Secondary School Leaver</label>
                     </div>
                     <span class="required">Required</span>
@@ -279,19 +279,19 @@
                 </div>
                 <div class="input-field-div">
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="metaRpFM" name="relationship" value="metaRpFM" required>
+                        <input type="radio" class="form-check-input" id="metaRpFM" name="relationship" value="Parent" required>
                         <label class="form-check-label" for="metaRpFM">Father/Mother</label>
                     </div>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="metaRpEs" name="relationship" value="metaRpEs">
+                        <input type="radio" class="form-check-input" id="metaRpEs" name="relationship" value="Sibling">
                         <label class="form-check-label" for="metaRpEs">Elder Brother or Sister</label>
                     </div>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="metaRpUA" name="relationship" value="metaRpUA">
+                        <input type="radio" class="form-check-input" id="metaRpUA" name="relationship" value="Uncle/Aunt">
                         <label class="form-check-label" for="metaRpUA">Uncle or Aunt</label>
                     </div>
                     <div class="form-check">
-                        <input type="radio" class="form-check-input" id="metaRpOth" name="relationship" value="metaRpOth">
+                        <input type="radio" class="form-check-input" id="metaRpOth" name="relationship" value="Others">
                         <label class="form-check-label" for="metaRpOth">Others</label>
                     </div>
                    
@@ -309,26 +309,32 @@
             </div>
             <div class="input-box">
                 <div class="label-div">
-                    <label for="resident">Residential Address</label>
+                    <label>Residential Address</label>
                 </div>
                 <div class="input-field-div">
-                    <input required id="resident" class="input-field" type="text">
+                    <input id="resident" class="input-field" type="text" required>
                     <span class="required">Required</span>
                 </div>
+            
+            </div>
+            <div class="input-box">
                 <div class="label-div">
-                    <label for="town">Town / City </label>
+                    <label>Town / City</label>
                 </div>
                 <div class="input-field-div">
-                    <input required id="town" class="input-field" type="text">
+                    <input id="town" class="input-field" type="text" required>
                     <span class="required">Required</span>
                 </div>
+            </div>
+            <div class="input-box">
                 <div class="label-div">
-                    <label for="state">State</label>
+                    <label>State</label>
                 </div>
                 <div class="input-field-div">
-                    <input required id="state" class="input-field" type="text">
+                    <input id="state" class="input-field" type="text" required>
                     <span class="required">Required</span>
                 </div>
+            
             </div>
             <div class="input-box">
                 <div class="label-div">
@@ -367,8 +373,7 @@
             
         </div>
         <div class="section">
-            <button class="submitBtn" type="submit">SUBMIT</button>
-            <button class="test" type="submit">test</button>
+            <button class="submitBtn" type="button">SUBMIT</button>
         </div>
     </form>
 </body>

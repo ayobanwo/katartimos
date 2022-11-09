@@ -136,9 +136,14 @@ header p {
     background: #EED1A4;
     padding: 4% 8%;
     font-weight: 500;
+    font-size: 20px;
 }
 label{
     margin-bottom: 0;
+    font-size: 19px;
+}
+.form-check-label{
+    font-size: 17px;
 }
 .input-field-div {
     background: #F8F8F8;
@@ -182,9 +187,9 @@ select{
 .submitBtn,
 .nextBtn {
     padding: 1% 3%;
-    background: #611833;
+    background: #eed1a4;
     font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
+    color: #000;
     border: none;
     border-radius: 5px;
     font-weight: bold;

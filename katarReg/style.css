@@ -12,12 +12,13 @@ body {
 }
 
 .headcontent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5% ;
     background: rgb(0 0 0 / 50%);
+}
+.headcontent-center{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 }
 
 #navbar {
@@ -126,11 +127,13 @@ body {
     text-align: center;
     letter-spacing: 0.015em;
     color: #FFFFFF;
-    padding: 3% 20%;
-    margin: 0;
+    padding: 2% 10%;
+    margin-top: 30px;
+    width: 100%;
 }
 .header-subhead a{
-    color: #59c5ac;
+    font-size: 25px;
+    color: #93d32d;
 }
 .section{
     padding: 4% 20%;
@@ -148,10 +151,18 @@ body {
     width: 100%;
     margin: 50px;
 }
+label {
+    margin-bottom: 0;
+    font-size: 19px;
+}
+.form-check-label {
+    font-size: 17px;
+}
 .label-div{
     background: #EED1A4;
     padding: 4% 8%;
     font-weight: 500;
+    font-size: 20px;
 }
 .input-field-div{
     background: #F8F8F8;
@@ -187,9 +198,9 @@ body {
 }
 .submitBtn, .nextBtn{
     padding: 1% 3%;
-    background: #611833;
+    background: #eed1a4;
     font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
+    color: #000;
     border: none;
     border-radius: 5px;
     font-weight: bold;
