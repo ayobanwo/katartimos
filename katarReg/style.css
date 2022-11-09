@@ -122,7 +122,7 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 154.4%;
     text-align: center;
     letter-spacing: 0.015em;
@@ -232,6 +232,12 @@ label {
     body{
         background-image: url(../images/katar-mob-bg-blur.png);
         background-position: center;
+    }
+    .headcontent-center{
+        padding: 1% 5%;
+    }
+    .heading .bold{
+        font-size: 25px;
     }
     .congress {
         font-weight: 700;
