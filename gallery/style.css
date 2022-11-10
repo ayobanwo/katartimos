@@ -87,13 +87,13 @@ h3{
 }
 .imgDiv img{
     margin: 10px;
-    width: 220px;
-    height: 150px;
+    width: 270px;
+    height: auto;
     border-radius: 8px;
     transition: ease-in-out 0.3s;
 }
 .imgDiv img:hover{
-    transform: scale(3);
+    transform: scale(1.5);
 }
 
 
@@ -106,4 +106,7 @@ h3{
     #nav-logo {
     height: 45px;
 }
+    .imgDiv img{
+        width: 120px;
+    }
 }

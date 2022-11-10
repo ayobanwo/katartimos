@@ -259,6 +259,7 @@ section > p{
     .accomod{
         display: block;
         text-align: center;
+        margin: 15% 2%;
     }
     .accomod h3{
         font-size: 25px;
@@ -277,6 +278,12 @@ section > p{
     }
     header p{
         font-size: 25px;
+    }
+    .accomod{
+        margin: 20% 2%;
+    }
+    .accomodDiv{
+        margin: 8%;
     }
     .prekart a{
         font-size: 13px;
