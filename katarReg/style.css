@@ -1,10 +1,6 @@
 body {
     background: black;
     font-family: 'Clash Display';
-    background: url(../images/katarbg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 * {
     padding: 0;
@@ -12,7 +8,11 @@ body {
 }
 
 .headcontent{
-    background: rgb(0 0 0 / 50%);
+    background: url(../images/katarbg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 8% 0; 
 }
 .headcontent-center{
     display: flex;
@@ -229,9 +229,11 @@ label {
     }
 }
 @media (max-width: 600px) {
-    body{
+    .headcontent{
         background-image: url(../images/katar-mob-bg-blur.png);
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .headcontent-center{
         padding: 1% 5%;
@@ -263,8 +265,8 @@ label {
     .header-subhead{
         padding: 4%;
     }
-    .headcontent{
-        background: none;
+    .header-subhead a {
+        font-size: 16px;
     }
     .section{
         font-size: 15px;
@@ -289,6 +291,12 @@ label {
         font-size: 17px;
         font-weight: 500;
     }
+    .label-div label{
+        font-size: 15px;
+    }
+    .form-check-label {
+    font-size: 14px;
+}
     select {
         padding: 12px 0;
     }

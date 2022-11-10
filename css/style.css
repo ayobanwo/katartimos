@@ -201,6 +201,7 @@ header img{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
+    margin: 0;
 }
 .section{
     padding: 6% 10%;
@@ -292,6 +293,9 @@ header img{
     .header-btn{
         font-size: 13px ;
         padding: 12px 20px;
+    }
+    .prekart a{
+        font-size: 14px;
     }
     .section{
         font-size: 15px;

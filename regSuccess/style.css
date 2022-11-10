@@ -303,7 +303,9 @@ body {
     .header-subhead {
         padding: 4%;
     }
-
+    .prekart a{
+        font-size: 14px;
+    }
     .section {
         font-size: 13px;
     }

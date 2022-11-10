@@ -225,6 +225,7 @@ section > p{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
+    margin: 0;
 }
 @media (max-width: 1200px) {
     .desc,.price {
@@ -276,6 +277,9 @@ section > p{
     }
     header p{
         font-size: 25px;
+    }
+    .prekart a{
+        font-size: 13px;
     }
     section > p{
         font-size: 20px;
