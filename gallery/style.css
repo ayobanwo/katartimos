@@ -11,6 +11,7 @@ body{
 #navbar {
     padding: 20px 6%;
     border-color: transparent !important;
+    background: black;
 }
 
 .navbar-dark,
