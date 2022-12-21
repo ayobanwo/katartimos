@@ -1,22 +1,28 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.creditTag{
-    display: none;
+
+.creditTag {
+    display: none !important;
 }
-#navbar{
+
+#navbar {
     padding: 20px 6%;
     border-color: transparent !important;
     background: black;
 }
-.navbar-dark, .navbar-toggler{
+
+.navbar-dark,
+.navbar-toggler {
     border-color: transparent !important;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     justify-content: flex-end;
 }
-.header-nav-link{
+
+.header-nav-link {
     color: white !important;
     font-family: 'Clash Display';
     font-style: normal;
@@ -24,6 +30,7 @@
     font-size: 16px;
     margin-right: 80px;
 }
+
 .link-hover-effect-1 {
     position: relative;
     display: inline-block;
@@ -46,14 +53,17 @@
 .link-hover-effect-1:hover::before {
     transform: translateX(0);
 }
-#nav-logo{
+
+#nav-logo {
     width: auto;
     height: 80px;
 }
-.navbar-nav{
+
+.navbar-nav {
     align-items: center;
 }
-header{
+
+header {
     background: url(../images/katarbg.svg);
     background-position: center;
     background-size: cover;
@@ -66,10 +76,12 @@ header{
     padding: 8%;
     padding-top: 1%;
 }
-header img{
+
+header img {
     padding-top: 30px;
 }
-.congress{
+
+.congress {
     font-family: 'Cinzel';
     font-weight: 700;
     font-size: 36px;
@@ -77,21 +89,24 @@ header img{
     letter-spacing: 1.005em;
     margin-bottom: 0;
 }
-.d2022{
+
+.d2022 {
     width: auto;
     height: 100px;
-    padding-top:  20px;
+    padding-top: 20px;
     margin-bottom: 40px;
 }
 
-.date, .dec{
+.date,
+.dec {
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 24px;
     line-height: 109.4%;
     letter-spacing: 1.005em;
 }
-.attend{
+
+.attend {
     margin-top: 20px;
     font-family: 'Montserrat';
     font-style: normal;
@@ -100,10 +115,13 @@ header img{
     line-height: 109.4%;
     color: #EED1A4;
 }
-.header-btndiv{
+
+.header-btndiv {
     display: flex;
+    align-items: center;
 }
-.header-btn{
+
+.header-btn {
     display: inline-block;
     margin-top: 30px;
     background: transparent;
@@ -156,14 +174,17 @@ header img{
 .header-btn:hover:before {
     width: 100%;
 }
-.reg{
+
+.reg {
     font-family: 'Poppins';
 }
-.countdown{
+
+.countdown {
     /* display: flex; */
     font-family: 'Poppins';
 }
-.box{
+
+.box {
     padding: 15px;
     background: #F5F5F5;
     display: flex;
@@ -172,10 +193,43 @@ header img{
     font-weight: 400;
     font-size: 24px;
     color: #252525;
-    margin:  5px;
+    margin: 5px;
     /* width: 40px; */
 }
-.section{
+
+.prekart {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    background: #EED1A4;
+    font-weight: 700;
+}
+
+.prekart a {
+    color: #000;
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.2;
+    }
+}
+
+.blink {
+    text-decoration: blink;
+    animation-name: blinker;
+    animation-duration: 0.6s !important;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    margin: 0;
+}
+
+.section {
     padding: 6% 10%;
     display: flex;
     flex-direction: column;
@@ -189,94 +243,120 @@ header img{
     text-align: center;
     letter-spacing: 0.015em;
 }
-.section .bold{
+
+.section .bold {
     font-weight: 800;
 }
-.img-div{
+
+.img-div {
     display: none;
 }
-.img-div img{
+
+.img-div img {
     width: 100%;
 }
-.carousel{
+
+.carousel {
     padding: 6% 10%;
 }
 
 
 @media (max-width: 1080px) {
-    .congress{
+    .congress {
         font-size: 25px;
         letter-spacing: 0.6em;
     }
-    .date{
+
+    .date {
         font-size: 18px;
         letter-spacing: 0.6em;
     }
-    .attend{
+
+    .attend {
         font-size: 15px;
     }
-    .section{
+
+    .section {
         font-size: 15px;
     }
 }
+
 @media (max-width: 987px) {
     .header-nav-link {
         margin: 0;
     }
 }
-@media (max-width: 660px){
-    #nav-logo{
+
+@media (max-width: 660px) {
+    #nav-logo {
         height: 45px;
     }
-    header{
+
+    header {
         background-image: url(../images/katarmob-bg.png);
     }
-    .congress{
+
+    .congress {
         font-weight: 700;
         font-size: 18px;
         line-height: 24px;
         letter-spacing: 0.785em;
     }
-    .d2022{
-        height: 73px;
+
+    .d2022 {
+        height: 78px;
     }
-    .day{
+
+    .day {
         text-align: center;
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
     }
-    .dec{
+
+    .dec {
         font-size: 15px;
         letter-spacing: normal;
         margin-bottom: 15px;
     }
-    .date{
+
+    .date {
         font-size: 12px;
         letter-spacing: 0.785em;
     }
-    .attend{
+
+    .attend {
         font-size: 13px;
     }
-    .header-btndiv{
+
+    .header-btndiv {
         display: flex;
         flex-direction: column;
+        ali
     }
-    .header-btn{
-        font-size: 13px ;
+
+    .header-btn {
+        font-size: 13px;
         padding: 12px 20px;
     }
-    .section{
+
+    .prekart a {
+        font-size: 14px;
+    }
+
+    .section {
         font-size: 15px;
         text-align: justify;
         font-weight: 500;
         padding-top: 10%;
         line-height: 26px;
     }
-    .carousel{
-        display: none;
+
+    .carousel {
+        padding: 0;
     }
-    .img-div{
+
+    .img-div {
         display: block;
     }
 }

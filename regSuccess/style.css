@@ -1,34 +1,36 @@
 body {
     background: black;
     font-family: 'Clash Display';
-    background: url(../images/katarbg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
+
 * {
     padding: 0;
     margin: 0;
 }
 
-.headcontent{
-    background: rgb(0 0 0 / 50%);
-}
-.headcontent-center{
+.headcontent {
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/katarbg.svg);
+    /* backdrop-filter: blur(500px); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
 }
 
 #navbar {
     padding: 20px 6%;
-    border-color: transparent !important; 
+    border-color: transparent !important;
     background: #000;
 }
+
 .navbar-nav {
     align-items: center;
 }
+
 .navbar-dark,
 .navbar-toggler {
     border-color: transparent !important;
@@ -46,6 +48,7 @@ body {
     font-size: 16px;
     margin-right: 80px;
 }
+
 .link-hover-effect-1 {
     position: relative;
     display: inline-block;
@@ -68,45 +71,58 @@ body {
 .link-hover-effect-1:hover::before {
     transform: translateX(0);
 }
+
 #nav-logo {
     width: auto;
     height: 80px;
 }
+.kart-img{
+    height: 85px;
+}
 .d2022 {
     width: auto;
-    height: 100px;
+    height: 80px;
     padding-top: 20px;
     margin-bottom: 40px;
 }
+
 .congress {
     font-family: 'Cinzel';
     font-weight: 700;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 49px;
-    letter-spacing: 1.005em;
+    letter-spacing: .8005em;
     margin-bottom: 0;
     color: white;
 }
-.heading{
+
+.heading {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
+    font-weight: 600;
+    font-size: 30px;
     line-height: 154.4%;
     text-align: center;
     letter-spacing: 0.015em;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
 }
-.heading .bold{
-    font-size: 38px;
-    letter-spacing: 0.2em;
-    font-weight: 700;
+.attend {
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 109.4%;
+    color: #EED1A4;
 }
-.blur-bg{
+
+.blur-bg {
     padding-bottom: 8%;
 }
-.sub-heading{
+
+.sub-heading {
     font-family: 'Clash Display';
     font-style: italic;
     font-weight: 300;
@@ -117,9 +133,10 @@ body {
     color: #EED1A4;
     margin: 4%;
 }
-.header-subhead{
+
+.header-subhead {
     background: #d9d9d91a;
-    font-family: 'Montserrat';
+    font-family: 'Clash Display';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -127,48 +144,42 @@ body {
     text-align: center;
     letter-spacing: 0.015em;
     color: #FFFFFF;
-    padding: 2% 10%;
-    margin-top: 30px;
-    width: 100%;
+    padding: 3% 20%;
+    margin: 0;
 }
-.header-subhead a{
-    font-size: 25px;
-    color: #93d32d;
+.header-subhead a {
+    color: #59c5ac;
 }
-.section{
+.section {
     padding: 4% 20%;
-    background: rgb(0 0 0 / 50%);
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#nonMemb{
+
+#nonMemb {
     display: none;
 }
-.input-box{
+
+.input-box {
     width: 100%;
     margin: 50px;
 }
-label {
-    margin-bottom: 0;
-    font-size: 19px;
-}
-.form-check-label {
-    font-size: 17px;
-}
-.label-div{
+
+.label-div {
     background: #EED1A4;
-    padding: 4% 8%;
+    padding: 2% 8%;
     font-weight: 500;
-    font-size: 20px;
 }
-.input-field-div{
+
+.input-field-div {
     background: #F8F8F8;
-    padding:5% 8%;
+    padding: 5% 8%;
 }
-.input-field{
+
+.input-field {
     border: 0;
     border-bottom: 2px solid #A5A5A5;
     outline: 0;
@@ -176,7 +187,8 @@ label {
     background: transparent;
     margin-bottom: 15px;
 }
-.required{
+
+.required {
     background: #D9D9D9;
     border-radius: 4px;
     font-family: 'Montserrat';
@@ -188,108 +200,150 @@ label {
     letter-spacing: 0.015em;
     padding: 3px 15px;
 }
-.formTitle{
+
+.formTitle {
     background: #d9d9d91a;
     text-align: center;
-    font-family: 'Montserrat', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
     padding: 2% 6%;
     margin-top: 4%;
 }
-.submitBtn, .nextBtn{
+
+.submitBtn,
+.nextBtn {
     padding: 1% 3%;
-    background: #eed1a4;
+    background: #611833;
     font-family: 'Montserrat', sans-serif;
-    color: #000;
+    color: #FFFFFF;
     border: none;
     border-radius: 5px;
     font-weight: bold;
 }
-.btn-section{
+
+.btn-section {
     margin-top: -80px;
 }
-.form-check{
-    padding-bottom: 11px;
+.prekart {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    background: #EED1A4;
+    font-weight: 700;
 }
+
+.prekart a {
+    font-family: "Montserrat";
+    color: #000;
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.2;
+    }
+}
+
+.blink {
+    text-decoration: blink;
+    animation-name: blinker;
+    animation-duration: 0.6s !important;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
 @media (max-width: 1080px) {
     .congress {
         font-size: 25px;
         letter-spacing: 0.6em;
     }
-} 
+}
+
 @media (max-width: 987px) {
-    .heading{
+    .heading {
         font-size: 40px;
     }
-    .section{
+
+    .section {
         padding: 4% 10%;
     }
-    .header-nav-link{
+
+    .header-nav-link {
         margin: 0;
     }
 }
+
 @media (max-width: 600px) {
-    body{
+    .headcontent {
         background-image: url(../images/katar-mob-bg-blur.png);
-        background-position: center;
+    }
+    .kart-img{
+        height: 50px;
     }
     .congress {
         font-weight: 700;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 24px;
         letter-spacing: 0.785em;
     }
 
     .d2022 {
-        height: 73px;
+        height: 55px;
     }
+
     .blur-bg {
         background: none;
         padding-bottom: 15%;
     }
+
     #nav-logo {
         height: 45px;
     }
-    .heading{
+
+    .heading {
         font-size: 20px;
-        padding-bottom:10%;
+        padding-bottom: 10%;
     }
-    .header-subhead{
+
+    .header-subhead {
         padding: 4%;
     }
-    .headcontent{
-        background: none;
+
+    .section {
+        font-size: 13px;
     }
-    .section{
-        font-size: 15px;
-        font-weight: 400;
-        background: none;
-    }
-    .section1{
+
+    .section1 {
         position: relative;
         top: -80px;
         z-index: 100;
     }
-    .sub-heading{
+
+    .sub-heading {
         font-size: 15px;
         padding: 2px 45px;
         font-style: normal;
         font-weight: 400;
     }
-    header p{
+
+    header p {
         font-size: 10px;
     }
-    .label-div{
-        font-size: 17px;
-        font-weight: 500;
+
+    .label-div {
+        font-size: 13px;
+        font-weight: 400;
     }
-    select {
-        padding: 12px 0;
-    }
-    .formTitle h2{
+
+    .formTitle h2 {
         font-size: 18px;
     }
-    .formTitle p{
+
+    .formTitle p {
         font-size: 12px;
     }
 }

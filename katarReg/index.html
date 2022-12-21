@@ -36,34 +36,35 @@
 
         
         <div class="headcontent">
-            <img src="../images/kartis 1.png" class="img-fluid" alt="">
-            <p class="congress">CONGRESS</p>
-            <img src="../images/Group 6.svg" class="d2022" alt="">
-            <div class="blur-bg">
-
+            <div class="headcontent-center">
+                <img src="../images/kartis 1.png" class="img-fluid" alt="">
+                <p class="congress">CONGRESS</p>
+                <img src="../images/Group 6.svg" class="d2022" alt="">
+    
                 <div class="heading">
-                    KATARTISMOS CONGRESS, 2022 <br>
-                    REGISTRATION For Adults And Independents
+                    <span class="bold">REGISTRATION</span>  <br>
+                    <span class="subtitle">For Adults and Independents</span> 
                 </div>
-              
-                <p class="header-subhead">
-                    
-                    <a href="../metamorphoorReg/">Click here to register for Metamorphoo Nation and Children</a>  
-                </p>
             </div>
+              
+            <p class="header-subhead">
+                
+                <a href="../metamorphoorReg/">Click here to register for Metamorphoo Nation and Children</a>  
+            </p>
+            
         </div>
 
     </header>
 
-    <form action="">
+    <form action="../regSuccess/">
 
         <div class="section section1">
             <div class="input-box" id="overlay">
                 <div class="label-div">
-                    <label for="fname">First Name</label>
+                    <label for="first_name">First Name</label>
                 </div>
                 <div class="input-field-div">
-                    <input required  id="fname" class="input-field" type="text">
+                    <input required  id="first_name" class="input-field" type="text">
                     <span class="required">Required</span>
                 </div>
             </div>
@@ -72,7 +73,7 @@
                     <label>Last Name (Surname)</label>
                 </div>
                 <div class="input-field-div">
-                    <input required id="lname" class="input-field" type="text">
+                    <input required id="last_name" class="input-field" type="text">
                     <span class="required">Required</span>
                 </div>
             </div>
@@ -90,7 +91,7 @@
                     <label>Mobile Number (For texts and WhatsApp)</label>
                 </div>
                 <div class="input-field-div">
-                    <input required id="mobNum" class="input-field" type="text">
+                    <input required id="mobile_number" class="input-field" type="text">
                     <span class="required">Required</span>
                 </div>
             </div>
@@ -100,7 +101,7 @@
                 </div>
                 <div class="input-field-div">
                     <select name="gender" id="gender" class="input-field" required>
-                        <option value="select" selected disabled>Select</option>
+                        <option value="" selected disabled>Select</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select>
@@ -112,26 +113,30 @@
                     <label>Age Group</label>
                 </div>
                 <div class="input-field-div">
-                    <select name="ageGroup" id="ageGroup" class="input-field" required>
-                        <option value="select" selected disabled>Select</option>
-                        <option value="ageB8">Below 8</option>
-                        <option value="ageA8"> 8 - 13</option>
-                        <option value="ageA14">14 - 18</option>
-                        <option value="ageA19">19 - 35</option>
-                        <option value="ageA36">36 - 60</option>
-                        <option value="ageA60">Above 60</option>
+                    <select name="age_group" id="age_group" class="input-field" required>
+                        <option value="" selected disabled>Select</option>
+                        <option value="below8">Below 8</option>
+                        <option value="8-13"> 8 - 13</option>
+                        <option value="14-18">14 - 18</option>
+                        <option value="19-35">19 - 35</option>
+                        <option value="36-60">36 - 60</option>
+                        <option value="above60">Above 60</option>
                     </select>
                     <span class="required">Required</span>
                 </div>
             </div>
+
             <div class="input-box">
                 <div class="label-div">
                     <label>Residential Address</label>
                 </div>
                 <div class="input-field-div">
-                    <input id="address" class="input-field" type="text" required>
+                    <input id="resident" class="input-field" type="text" required>
                     <span class="required">Required</span>
                 </div>
+
+            </div>
+            <div class="input-box">
                 <div class="label-div">
                     <label>Town / City</label>
                 </div>
@@ -139,6 +144,8 @@
                     <input id="town" class="input-field" type="text" required>
                     <span class="required">Required</span>
                 </div>
+            </div>
+            <div class="input-box">
                 <div class="label-div">
                     <label>State</label>
                 </div>
@@ -146,10 +153,45 @@
                     <input id="state" class="input-field" type="text" required>
                     <span class="required">Required</span>
                 </div>
+
             </div>
     
             <div class="input-box">
-             <div class="label-div">
+                <div class="label-div">
+                    <label>Have you attended any previous edition of KATARTISMOS CONGRESS? (You can tick more than one
+                        option)</label>
+                </div>
+                <div class="input-field-div">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="kNo" name="attend_Conference" value="No">
+                        <label class="form-check-label" for="kNo">No</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="k21" name="attend_Conference" value="2021">
+                        <label class="form-check-label" for="k21">2021</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="k20" name="attend_Conference" value="2020">
+                        <label class="form-check-label" for="k20">2020</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="k19" name="attend_Conference" value="2019">
+                        <label class="form-check-label" for="k19">2019</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="k18" name="attend_Conference" value="2018">
+                        <label class="form-check-label" for="k18">2018</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="k17" name="attend_Conference" value="2017">
+                        <label class="form-check-label" for="k17">2017</label>
+                    </div>
+                    <span class="required">Required</span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="label-div">
                     <label>Are you a CROSSWALK CHURCH Worker/Member?</label>
                 </div>
                 <div class="input-field-div">
@@ -167,85 +209,27 @@
             </div>
         </div>
         
-        <!-- <div class="section nonMemb">
-            
-            <div class="input-box">
-                <div class="label-div">
-                    <label>Name and Location of Local Church/Ministry/Fellowship</label>
-                </div>
-                <div class="input-field-div">
-                    <input id="address" class="input-field" type="text" required>
-                    <span class="required">Required</span>
-                </div>
-            </div>
-            <div class="input-box">
-                <div class="label-div">
-                    <label>Name of Local Church Pastor</label>
-                </div>
-                <div class="input-field-div">
-                    <input id="address" class="input-field" type="text" required>
-                    <span class="required">Required</span>
-                </div>
-            </div>
-            <div class="input-box">
-                <div class="label-div">
-                    <label>Have you attended any previous edition of KATARTISMOS CONGRESS? (You can tick more than one option)</label>
-                </div>
-                <div class="input-field-div">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="kNo" name="kNo" value="kNo">
-                        <label class="form-check-label" for="kNo">No</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="k21" name="k21" value="k21">
-                        <label class="form-check-label" for="k21">2021</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="k20" name="k20" value="k20">
-                        <label class="form-check-label" for="k20">2020</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="k19" name="k19" value="k19">
-                        <label class="form-check-label" for="k19">2019</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="k18" name="k18" value="k18">
-                        <label class="form-check-label" for="k18">2018</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="k17" name="k17" value="k17">
-                        <label class="form-check-label" for="k17">2017</label>
-                    </div>
-                    <span class="required">Required</span>
-                </div>
-            </div>   
-
-            <div class="input-box">
-                <div class="label-div">
-                    <label>What State will you be travelling from in Nigeria?</label>
-                </div>
-                <div class="input-field-div">
-                    <input id="travFrom" class="input-field" type="text " required>
-                    <span class="required">Required</span>
-                </div>
-            </div>
-            <div class="input-box">
-                <div class="label-div">
-                    <label>How did you get to know about the Conference? (Indicate the name if it was an individual)</label>
-                </div>
-                <div class="input-field-div">
-                    <input id="knowConf" class="input-field" type="text" required>
-                    <span class="required">Required</span>
-                </div>
-            </div>
+        <div class="section" id="nonMemb">
     
+        
+            <div class="input-box">
+                <div class="label-div">
+                    <label>How did you get to know about the Conference? (Indicate the name if it was an
+                        individual)</label>
+                </div>
+                <div class="input-field-div">
+                    <input id="knowledge" class="input-field" type="text" required>
+                    <span class="required">Required</span>
+                </div>
+            </div>
+        
             <div class="input-box">
                 <div class="label-div">
                     <label>Have you made full arrangements to attend the Conference?</label>
                 </div>
                 <div class="input-field-div">
-                    <select name="confArrange" id="confArrange" class="input-field" required>
-                        <option value="select" selected disabled>Select</option>
+                    <select name="made_arrangement" id="made_arrangement" class="input-field" required>
+                        <option value="" selected disabled>Select</option>
                         <option value="arrangeYes">Yes</option>
                         <option value="arrangeNo">No</option>
                         <option value="arrangeNot">Not yet</option>
@@ -253,45 +237,22 @@
                     <span class="required">Required</span>
                 </div>
             </div>
-
+        
             <div class="input-box">
                 <div class="label-div">
-                    <label>What are your expectations for this Congress? Feel free to add a need for healing or miracle of any sort.</label>
+                    <label>What are your expectations for this Congress? Feel free to add a need for healing or miracle
+                        of any sort.</label>
                 </div>
                 <div class="input-field-div">
-                    <input id="confXpect" class="input-field" type="text" required>
+                    <input id="expectation" class="input-field" type="text" required>
                     <span class="required">Required</span>
                 </div>
             </div>
-
-        </div> -->
         
-    
-
-        <!-- <div class="section">
-            <div class="input-box">
-                <div class="label-div">
-                    <label>Would you love an opportunity to give financially or in any other capacity towards KATARTISMOS CONGRESS 2021?</label>
-                </div>
-            <div class="input-field-div">
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="giveYes" name="giveFin" value="giveYes">
-                    <label class="form-check-label" for="giveYes">Yes,I would really love to help</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="giveWill" name="giveFin" value="giveWill">
-                    <label class="form-check-label" for="giveWill">I will think about it, but I don't mind having the Ministry account details</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="giveNo" name="giveFin" value="giveNo">
-                    <label class="form-check-label" for="giveNo">No</label>
-                </div>
-            </div>
-            </div>
-        </div> -->
-
+        </div>
+        
         <div class="section btn-section">
-            <button class="nextBtn" type="submit">NEXT</button>
+            <button class="nextBtn" type="button">SUBMIT</button>
 
         </div>
     </form>

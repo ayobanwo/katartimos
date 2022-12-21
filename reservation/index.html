@@ -9,6 +9,7 @@
     <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel='stylesheet' href='https://pbutcher.uk/flipdown/css/flipdown/flipdown.css'>
     <link rel="stylesheet" href="style.css">
     <title>Reservation</title>
 </head>
@@ -29,11 +30,11 @@
                 </li>
 
                 <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1" target="_blank"
-                        href="../about/">
+                        href="https://whitefieldmissions.org/katartismos/">
                         About</a></li>
-                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1 blink"
+                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1"
                         href="../gallery/">Gallery</a></li>
-                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1 blink"
+                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1"
                         href="index.html">MakeYourReservation</a></li>
             </ul>
         </div>
@@ -43,54 +44,80 @@
         <div class="resImgDiv">
             <img class="resImg img-fluid" src="../images/reservation.svg" alt="">
         </div>
-        <div class="blurBg">
-            Kindly fill in your details.
-            If you only want to check the Available
-            Accommodation Options, go to
-            Accommodation List.
-        </div>
+        <div class="countdown">
+            <h4 style="text-align: center;">Accommodation Booking ends in</h4>
+            <div id="flipdown" class="flipdown"></div>
+        </div> <br> <br>
+        <p>
+            Choose Your Preferred Accommodation Type
+        </p>
     </header>
-    <form action="">
-        <div class="input-field-div">
-            <label for="fname">First Name*</label><br>
-            <input type="text" class="input-field" id="fname" placeholder="As used in Registration">
-        </div>
-        <div class="input-field-div">
-            <label for="fname">Last Name*</label><br>
-            <input type="text" class="input-field" id="fname" placeholder="As used in Registration">
-        </div>
-        <div class="input-field-div">
-            <label for="phoneNum">Phone*</label><br>
-            <input type="text" class="input-field" id="phoneNum" placeholder="Enter your phone number">
-        </div>
-        <div class="input-field-div">
-            <label for="email">E-mail*</label><br>
-            <input class="input-field" type="text" id="email" placeholder="Enter your E-mail">
-        </div>
-        <div class="input-field-div">
-            <label for="gender">Gender*</label><br>
-            <select name="gender" id="gender" class="input-field" required>
-                <option value="select" selected disabled>Select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-
-        </div>
-        <div class="input-field-div">
-            <label for="fname">Name of Local Church*</label><br>
-            <input type="text" class="input-field" id="fname" placeholder="Enter your phone number">
+    
+    <section>
+        <p>Select Gender</p>
+        <div class="genderDiv">
+            <span class="genderBtn" id="male">Male</span> 
+            <span class="genderBtn" id="female">Female</span>
         </div>
 
-        <label class="check">
-            <input type="checkbox" >
-            <span class="checkmark"></span>
-            I have registered for the Congress
-        </label>
+    </section>
+    <div class="accomodDiv">
+        <h2 id="hostelType"></h2>
+        <div class="acdiv">
 
-        <button class="submitBtn" type="submit">SUBMIT</button>
+            <div class="accomod">
+                <h3>DORMITORY</h3>
+                <p class="price">₦3,500 per person</p>
+                <p class="desc">Bunks. Toilets and Bathroom per Dorm</p>
 
-    </form>
-
+                <div class="btnDiv">
+                    <a href=""  id="dorm1" class="proceedBtn"> Proceed</a>
+                </div>
+            </div>
+            <div class="accomod">
+                <h3>DORMITORY WITH AC</h3>
+                <p class="price">₦5,000 per person</p>
+                <p class="desc">Air Conditioning, Bunks, Toilets and Bathroom per Dorm</p>
+                <div class="btnDiv">
+                    <a href="" id="dormAc" class="proceedBtn"> Proceed</a>
+                </div>
+            </div>
+            <div class="accomod">
+                <h3>HOSTEL with AC</h3>
+                <p class="price">₦9,000 per person</p>
+                <p class="desc">Bunks. Toilets and Bathroom per Dorm</p>
+                <div class="btnDiv">
+                    <a href="" id="hostelAc" class="proceedBtn">Proceed</a>
+                </div>
+            </div>
+            <div class="accomod">
+                <h3>SELF-CONTAIN ROOM</h3>
+                <p class="price">₦18,000 per person</p>
+                <p class="desc">No Air Conditioning. Maximum of 2 persons per room</p>
+                <div class="btnDiv">
+                    <a href="" id="selfcon" class="proceedBtn"> Proceed </a>
+                </div>
+            </div>
+            <div class="accomod">
+                <h3>SELF-CONTAIN EXECUTIVE with AC</h3>
+                <p class="price">₦30,000 per person</p>
+                <p class="desc">Air Conditioning. Wardrobe. Toilet and Bathroom
+                Maximum of 2 persons per room</p>
+                <div class="btnDiv">
+                    <a href="" id="selfconEx" class="proceedBtn"> Proceed</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prekart">
+        <a href="https://bit.ly/prekatartismos2022">
+            <p class="blink"> Click here to register for Pre - Kartatismos Retreat Now</p>
+    
+        </a>
+    </div>
+    <script src='https://pbutcher.uk/flipdown/js/flipdown/flipdown.js'></script>
+    <script src="countdown.js"></script>
+    <script src="script.js"></script>
     <script>window.jQuery || document.write('<script src="../js/jquery-slim.min.js"><\/script>')</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
