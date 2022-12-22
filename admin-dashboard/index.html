@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+        <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <main>
+        <div>
+            <h3>Adult Registration</h3> <br>
+            <h5>Get Registration Data</h5> 
+            <button class="btn btn-dark" id="getAdult">Get data</button> <br>
+            <textarea name="" id="adultData" cols="30" rows="10"></textarea> <br> <br>
+
+            <a href="https://www.convertcsv.com/json-to-csv.htm">
+                Convert to Excel
+            </a> <br> <br>
+            <h5>Delete Data</h5>
+            <span>Enter data id</span>
+            <input type="number" id="adultId">
+            <button id="delAdult" class="btn btn-danger">Delete</button> <br> <br>
+            <p id="adultMsg"> </p>
+        </div>
+
+        <div>
+            <h3>Child Registration</h3> <br>
+            <h5>Get Registration Data</h5> 
+            <button class="btn btn-dark" id="getChild">Get data</button> <br>
+            <textarea name="" id="childData" cols="30" rows="10"></textarea> <br> <br>
+            <a href="https://www.convertcsv.com/json-to-csv.htm">
+                Convert to Excel
+            </a> <br> <br>
+            <h5>Delete Data</h5>
+            <span>Enter data id</span>
+            <input type="number" id="childId">
+            <button id="delChild" class="btn btn-danger">Delete</button> <br> <br>
+            <p id="childMsg"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

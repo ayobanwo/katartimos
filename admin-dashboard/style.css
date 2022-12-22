@@ -1,0 +1,49 @@
+body {
+    background: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #bba7a7;
+}
+
+main {
+    margin-top: 50px;
+    padding: 3% 5%;
+    background: #262626;
+    border-radius: 20px;
+    width: 60%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div{
+    margin: 5%;
+}
+h1 {
+    text-align: center;
+    margin: 30px;
+}
+textarea{
+    margin-top: 5%;
+    background: #262626;
+    color: white;
+}
+input{
+    width: 50px !important;
+    background: #262626;
+    color: white; 
+    margin-right: 10px;
+}
+#adultMsg, #childMsg {
+    color: chartreuse;
+    font-family: 'Poppins';
+}
+@media (max-width: 660px) {
+    main{
+        padding: 8%;
+        width: 90%;
+    }
+}

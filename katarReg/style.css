@@ -118,22 +118,23 @@ body {
     margin: 4%;
 }
 .header-subhead{
+    display: block;
     background: #d9d9d91a;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 154.4%;
     text-align: center;
     letter-spacing: 0.015em;
-    color: #FFFFFF;
+    color: #93d32d;
     padding: 2% 10%;
     margin-top: 30px;
     width: 100%;
 }
-.header-subhead a{
-    font-size: 25px;
-    color: #93d32d;
+.header-subhead:hover{
+    color:red ;
+    text-decoration: none;
 }
 .section{
     padding: 4% 20%;
@@ -255,7 +256,9 @@ label {
         padding-bottom:10%;
     }
     .header-subhead{
+        font-size: 18px;
         padding: 4%;
+        margin-bottom: 8%;
     }
     .headcontent{
         background: none;

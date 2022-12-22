@@ -5,7 +5,7 @@
 #navbar {
     padding: 20px 6%;
     border-color: transparent !important;
-    background: black;
+    background: #1d1e20;
 }
 
 .navbar-dark,
@@ -59,7 +59,7 @@
 }
 
 header {
-    background: url(../images/katarbg.svg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/partner.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,25 +67,25 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
-    padding: 8% 20% 20%;
-    padding-top: 5%;
+    padding: 10%;
+    padding-top: 4%;
 }
 
 .partner{
-    font-family: 'Montserrat';
-    font-size: 80px;
+    font-family: 'Chalkboy';
+    font-size: 140px;
     letter-spacing: 8px;
-    margin-bottom: 2%;
 }
 header p{
     font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 154.4%;
-        text-align: center;
-        letter-spacing: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 154.4%;
+    text-align: center;
+    letter-spacing: 5px;
         
 }
 
@@ -94,7 +94,7 @@ section{
     background-position: center;
     background-size: cover;
     padding: 8%;
-    padding-bottom: 18%;
+    /* padding-bottom: 18%; */
     text-align: center;
 }
 section p{
@@ -105,6 +105,9 @@ section p{
     line-height: 154.4%;
     text-align: center;
     letter-spacing: 0.015em;
+}
+section img{
+    border-radius: 50px;
 }
 .donate-btn {
     display: inline-block;
@@ -159,13 +162,65 @@ section p{
 .donate-btn:hover:before {
     width: 100%;
 }
+@media (max-width: 1250px) {
+    header{
+        padding: 12%;
+    }
+    .partner {
+        font-size: 100px;
+    }
+    header p{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    section p, .donate-btn{
+        font-size: 20px;
+    }
+}
 @media (max-width: 987px) {
+    header{
+        padding: 15%;
+    }
     .header-nav-link {
         margin: 0;
+    }
+    .partner {
+        font-size: 80px;
+    }
+    header p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 887px){
+    .partner {
+        font-size: 70px;
+        line-height: 60px;
+    }
+}
+@media (max-width: 680px) {
+    header{
+        padding: 15% 10%;
     }
 }
 @media (max-width: 660px) {
     #nav-logo {
         height: 45px;
+    }
+    header {
+        padding: 30% 5%;
+    }
+    .partner{
+        margin-bottom: 50px;
+    }
+    header p{
+        font-size: 14px;
+    }
+    .section p{
+        font-size: 18px;
+    }
+    .donate-btn{
+        padding: 15px;
+        margin: 20px;
+        font-size: 15px;
     }
 }

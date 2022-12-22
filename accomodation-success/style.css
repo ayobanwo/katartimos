@@ -1,0 +1,195 @@
+body {
+    background: black;
+    font-family: 'Clash Display';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.headcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/katarbg.svg);
+    /* backdrop-filter: blur(500px); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+#navbar {
+    padding: 20px 6%;
+    border-color: transparent !important;
+    background: #000;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-dark,
+.navbar-toggler {
+    border-color: transparent !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.header-nav-link {
+    color: white !important;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 80px;
+}
+
+.link-hover-effect-1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5rem 0;
+}
+
+.link-hover-effect-1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateX(-105%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.link-hover-effect-1:hover::before {
+    transform: translateX(0);
+}
+
+#nav-logo {
+    width: auto;
+    height: 80px;
+}
+
+.kart-img {
+    height: 85px;
+}
+
+.d2022 {
+    width: auto;
+    height: 80px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.congress {
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 49px;
+    letter-spacing: .8005em;
+    margin-bottom: 0;
+    color: white;
+}
+
+.heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 154.4%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.attend {
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 109.4%;
+    color: #EED1A4;
+}
+
+section{
+    padding: 5%;
+    background: white;
+    text-align: center;
+}
+section img{
+    border-radius: 15px;
+}
+
+@media (max-width: 1080px) {
+    .congress {
+        font-size: 25px;
+        letter-spacing: 0.6em;
+    }
+}
+
+@media (max-width: 987px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .section {
+        padding: 4% 10%;
+    }
+
+    .header-nav-link {
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .headcontent {
+        background-image: url(../images/katar-mob-bg-blur.png);
+    }
+
+    .kart-img {
+        height: 50px;
+    }
+
+    .congress {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.785em;
+    }
+
+    .d2022 {
+        height: 55px;
+    }
+    .attend{
+        line-height: 30px;
+    }
+
+    #nav-logo {
+        height: 45px;
+    }
+
+    .heading {
+        font-size: 30px;
+        padding-bottom: 10%;
+    }
+    section h1{
+        font-size: 25px;
+    }
+
+  
+ 
+
+    
+
+    
+}
